@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
-  //  private let contacts = 
+    private let contacts = Person.getContactList()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            
+        }
     }
 }
 
