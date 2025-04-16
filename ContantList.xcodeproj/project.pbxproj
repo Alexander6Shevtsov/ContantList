@@ -13,6 +13,8 @@
 		425BDDBF2DAFFAE90007D285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425BDDB12DAFFAE90007D285 /* AppDelegate.swift */; };
 		425BDDC02DAFFAE90007D285 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425BDDB82DAFFAE90007D285 /* SceneDelegate.swift */; };
 		425BDDC12DAFFAE90007D285 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425BDDB92DAFFAE90007D285 /* DataStore.swift */; };
+		425BDDC52DAFFCA10007D285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425BDDC42DAFFCA10007D285 /* ContentView.swift */; };
+		425BDDC82DB0024E0007D285 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425BDDC72DB0024E0007D285 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		425BDDB62DAFFAE90007D285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		425BDDB82DAFFAE90007D285 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		425BDDB92DAFFAE90007D285 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		425BDDC42DAFFCA10007D285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		425BDDC72DB0024E0007D285 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 		425BDDBA2DAFFAE90007D285 /* ContantList */ = {
 			isa = PBXGroup;
 			children = (
-				425BDDB92DAFFAE90007D285 /* DataStore.swift */,
+				425BDDC62DB0021C0007D285 /* Models */,
+				425BDDC32DAFFC410007D285 /* Views */,
+				425BDDC22DAFFC1E0007D285 /* Services */,
 				425BDDB12DAFFAE90007D285 /* AppDelegate.swift */,
 				425BDDB52DAFFAE90007D285 /* LaunchScreen.storyboard */,
 				425BDDB72DAFFAE90007D285 /* Main.storyboard */,
@@ -65,6 +71,30 @@
 				425BDDB32DAFFAE90007D285 /* Info.plist */,
 			);
 			path = ContantList;
+			sourceTree = "<group>";
+		};
+		425BDDC22DAFFC1E0007D285 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				425BDDB92DAFFAE90007D285 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		425BDDC32DAFFC410007D285 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				425BDDC42DAFFCA10007D285 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		425BDDC62DB0021C0007D285 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				425BDDC72DB0024E0007D285 /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425BDDC82DB0024E0007D285 /* Person.swift in Sources */,
 				425BDDBF2DAFFAE90007D285 /* AppDelegate.swift in Sources */,
 				425BDDC02DAFFAE90007D285 /* SceneDelegate.swift in Sources */,
+				425BDDC52DAFFCA10007D285 /* ContentView.swift in Sources */,
 				425BDDC12DAFFAE90007D285 /* DataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
