@@ -16,7 +16,7 @@ struct ContactListView: View {
                 NavigationLink(
                     person.fullName,
                     destination: PersonView(person: person)
-                    )
+                )
             }
             .listStyle(.plain)
             .navigationBarTitle("Contact List")
