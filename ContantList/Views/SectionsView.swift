@@ -14,9 +14,12 @@ struct SectionsView: View {
     var body: some View {
         NavigationStack {
             List(contacts) { person in
-                Section(header: Text(person.fullName).font(.headline)) {
+                Section {
                     Label(person.phoneNumber, systemImage: "phone")
                     Label(person.email, systemImage: "tray")
+                } header: {
+                    Text(person.fullName)
+                        .font(.headline)
                 }
             }
             .listStyle(.plain)

@@ -5,8 +5,9 @@
 //  Created by Alexander Shevtsov on 16.04.2025.
 //
 
+// Identifiable чтоб не юзать ID при передаче данных
 struct Person: Identifiable {
-    
+    // обязательное свойство
     let id: Int
     let name: String
     let surname: String

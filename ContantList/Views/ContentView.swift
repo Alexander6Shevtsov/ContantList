@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    // первичная иниц
     private let contacts = Person.getContactList()
     
     var body: some View {
