@@ -7,7 +7,7 @@
 ## Стек
 
 - **Язык:** Swift 5.0  
-- **UI:** SwiftUI + UIKit App/Scene Delegate  
+- **UI:** SwiftUI + UIKit
 - **Зависимости:** отсутствуют (SPM/CocoaPods не используются)
 
 ---
