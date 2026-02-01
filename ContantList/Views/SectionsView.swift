@@ -8,26 +8,26 @@
 import SwiftUI
 
 struct SectionsView: View {
-    
-    let contacts: [Person]
-    
-    var body: some View {
-        NavigationStack {
-            List(contacts) { person in
-                Section {
-                    Label(person.phoneNumber, systemImage: "phone")
-                    Label(person.email, systemImage: "tray")
-                } header: {
-                    Text(person.fullName)
-                        .font(.headline)
-                }
-            }
-            .listStyle(.plain)
-            .navigationTitle("Contacts List") // заголовок
-        }
-    }
+	
+	let contacts: [Person]
+	
+	var body: some View {
+		NavigationStack {
+			List(contacts) { person in
+				Section {
+					Label(person.phoneNumber, systemImage: "phone")
+					Label(person.email, systemImage: "tray")
+				} header: {
+					Text(person.fullName)
+						.font(.headline)
+				}
+			}
+			.listStyle(.plain)
+			.navigationTitle("Contacts List")
+		}
+	}
 }
 
 #Preview {
-    SectionsView(contacts: Person.getContactList())
+	SectionsView(contacts: Person.getContactList())
 }
